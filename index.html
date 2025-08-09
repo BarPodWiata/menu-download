@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Pobieranie menu</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-color: #f4f4f4;
+        margin-top: 100px;
+    }
+    h1 {
+        color: green;
+    }
+</style>
+<script>
+    window.onload = function() {
+        // Automatyczne pobranie pliku
+        let link = document.createElement("a");
+        link.href = "BarPodWiatkaMenu (1).png"; // nazwa Twojego obrazka
+        link.download = "BarPodWiatkaMenu (1).png";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
+</script>
+</head>
+<body>
+    <h1>Pomyślnie pobrano menu!</h1>
+    <p>Jeśli pobieranie się nie rozpoczęło, <a href="menu.png" download>Kliknij tutaj</a>.</p>
+</body>
+</html>
